@@ -1,6 +1,7 @@
 package com.muhsanjaved.firebasedatabasepracticekotlin
 
 import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -14,6 +15,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.muhsanjaved.firebasedatabasepracticekotlin.activities.HomeActivity
 import com.muhsanjaved.firebasedatabasepracticekotlin.databinding.ActivityMainBinding
 import kotlin.math.sin
 
@@ -86,6 +88,7 @@ class MainActivity : AppCompatActivity() {
                 auth.signInWithCredential(credential).addOnCompleteListener {
                     if (it.isSuccessful){
                         Toast.makeText(this,"Success",Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this, HomeActivity::class.java))
                     }
                     else{Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()}
                 }
@@ -95,5 +98,14 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
         }
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+//        if (FirebaseAuth.getInstance().currentUser!= null){
+//        if (auth.currentUser!= null){
+//            startActivity(Intent(this, HomeActivity::class.java))
+//        }
     }
 }
