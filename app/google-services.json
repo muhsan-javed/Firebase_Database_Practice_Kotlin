@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "294157414968",
+    "project_id": "fir-practice-kotlin",
+    "storage_bucket": "fir-practice-kotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294157414968:android:a8e8503dcec5ba0ac66ccd",
+        "android_client_info": {
+          "package_name": "com.muhsanjaved.firebasedatabasepracticekotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294157414968-t8lfcscum3lo1aqv21n5spuhdldjp8u4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLYPFRczVTVFMLyd57SQKbUEwjiZovY8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294157414968-t8lfcscum3lo1aqv21n5spuhdldjp8u4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
