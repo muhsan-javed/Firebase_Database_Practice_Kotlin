@@ -39,6 +39,7 @@
                 android:layout_marginTop="24dp"
                 android:text="Welcome Back"
                 android:textSize="25sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:fontFamily="@font/roboto"
                 app:layout_constraintEnd_toEndOf="parent"
