@@ -47,6 +47,8 @@ class MainActivity : AppCompatActivity() {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d("TAG", "createUserWithEmail:success")
                         Toast.makeText(this,task.result.toString(), Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this@MainActivity,HomeActivity::class.java))
+                        finish()
                         val user = auth.currentUser
 //                        updateUI(user)
                     } else {
