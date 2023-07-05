@@ -55,7 +55,7 @@ class HomeActivity : AppCompatActivity() {
         })
 
         binding.create.setOnClickListener {
-            startActivity(Intent(this@HomeActivity, CreateUpDateActivity::class.java))
+            startActivity(Intent(this@HomeActivity, CreateUpDateActivity::class.java).putExtra("MODE","CREATE"))
         }
 
 
